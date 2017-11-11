@@ -112,7 +112,7 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 Scanse Sweep Lidar'ı, vesc'yi ve imu'yu arıyoruz. Bu cihazları filtrele:
 ```bash
-lsusb | grep "9dof\|STMicro\|Future Technology"
+lsusb | grep "9d0f\|STMicro\|Future Technology"
 ```
 Çıktı:
 ```bash
