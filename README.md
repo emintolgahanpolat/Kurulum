@@ -75,9 +75,12 @@ sudo ldconfig
 
 ```bash
 cd ~/
+sudo apt-get -y install jstest-gtk
 wget --no-parent -nH http://ec2-18-220-61-136.us-east-2.compute.amazonaws.com/racecar-ws.zip
 cd racecar-ws
 rm -rf build devel
+rosdep install -a -y -r
+
 catkin_make
 ```
 
